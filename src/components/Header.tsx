@@ -1,21 +1,23 @@
 import React from "react";
-import { HiArrowRight } from "react-icons/hi";
+import { AiFillApple } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header style={{ backgroundColor: "#DADBF1" }} className="px-8 pt-20 pb-28">
-      <div className="flex items-center flex-col max-w-screen-md mx-auto">
-        <h1 className="text-7xl text-black font-normal mb-3">
-          How can we help?
-        </h1>
-        <form className="w-full relative">
-          <input
-            className=" w-full p-4 border border-black rounded hover:border-blue-700 active:border-blue-700 active:border"
-            placeholder="Search"
-            type="text"
-          />
-          <HiArrowRight className="absolute top-1/3 right-5 text-xl" />
-        </form>
+    <header className="bg-black px-7 ">
+      <div className="pt-5 pb-5 px-16 text-white flex justify-between">
+        <div className="flex items-center">
+          <AiFillApple className="text-4xl" />
+          <h2 className="text-2xl">| home</h2>
+        </div>
+
+        <div className="flex items-center">
+          <button className="bg-transparent border border-white p-3 rounded-xl mr-5 py-1.5 px-5 text-2xl font-normal">
+            Submit a request
+          </button>
+          <button className="bg-indigo-500 text-white py-3 px-6 rounded-xl hover:bg-white hover:text-black  ease-in-out delay-75 transition duration-300 ">
+            Sign In
+          </button>
+        </div>
       </div>
     </header>
   );
