@@ -6,8 +6,12 @@ const Header = () => {
     <header className="bg-black px-7 ">
       <div className="pt-5 pb-5 px-16 text-white flex justify-between">
         <div className="flex items-center">
-          <AiFillApple className="text-4xl" />
-          <h2 className="text-2xl">| home</h2>
+          <div className="flex items-center">
+            <AiFillApple className="text-4xl" />
+            <span className="text-2xl px-2">Abstract</span>
+          </div>
+
+          <h2 className="text-2xl">| Helpe center</h2>
         </div>
 
         <div className="flex items-center">
